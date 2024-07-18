@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:sorts mill goudy;
+}
+
+#bow{
+    display: flex;
+    padding-top:2%;
+    padding-left:30%;
+    padding-bottom:2% ;
+}
+
+.title{
+    padding:34px 222px;
+}
+
+.parts{
+    display: flex;
+    left: 50%;
+    right:50%;
+}
+
+.left1{
+    padding-bottom: 160px;
+}
+
+.left2{
+    padding-top: 160px;
+}
+
+.imag{
+    padding: 0px 30px;
+    display: flex;
+    right:50%
+}
+
+.pics {
+    padding:5px;
+    border: 4px solid goldenrod;
+    border-spacing:6 10px ;
+}
+
+.info{
+    left:50%;
+    padding: 3% 6%;
+}
+
+.main{
+    font-size: xxx-large;
+}
+
+span{
+    color: goldenrod;
+}
+
+.sub{
+    font-size: larger;
+    color: rgb(185, 183, 183);
+    padding-bottom:25px;
+}
+
+button{
+    border-color: goldenrod;
+    border-width: 2px;
+    background-color: transparent;
+    color: goldenrod;
+    padding: 14px 50px;
+    font-size: 600;
+}
