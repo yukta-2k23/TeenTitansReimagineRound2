@@ -8,6 +8,8 @@ body {
 #brand{
     display: flex;
     padding-left:2% ;
+    max-width: 100%;
+    height: auto;
 }
 
 .divisions{
@@ -23,6 +25,10 @@ body {
 .footsub{
     padding: 5px;
     color: rgb(54, 53, 53);
+}
+
+#subs{
+    padding-top: 10%;
 }
 
 ::placeholder{
