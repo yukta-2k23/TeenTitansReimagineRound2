@@ -36,6 +36,7 @@ tl.from(".parker-loader", {
 tl.to(".parker-loader", {
   opacity: 0,
   x: -20,
+  scale:4.5,
   duration: 1.5,
   stagger: 0.1,
 });
