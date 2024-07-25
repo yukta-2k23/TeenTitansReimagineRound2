@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Goudy";
+    src: url(./Fonts/Goudy\ Titling\ W05\ SemiBold.woff2);
+  }
+  @font-face {
+    font-family: "Santral";
+    src: url(./Fonts/taner-ardali-santral-book-2.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.writingtypewrapper {
+    width: 100vw;
+    padding-top:0.5em;
+    margin-top: 0.5em;
+}
+
+.writingtypetagcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bow {
+    display: block;
+    width: 20em;
+}
+
+
+.title {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 34px 0;
+    max-width: 90%;
+}
+
+.parts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.left1 {
+    padding-top: 50px;
+    padding-bottom: 160px;
+}
+
+.left2 {
+    padding-bottom: 160px;
+    padding-top: 160px;
+}
+
+.imag {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pics {
+    padding: 5px;
+    border: 3px solid #B29142;
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 3% 6%;
+    text-align: center;
+}
+
+.main {
+    color:#B29142;
+    font-family: "Goudy";
+    font-size: 2.5em;
+}
+
+span {
+    color: #B29142;
+}
+
+.sub {
+    font-size: 1em;
+    font-family: "Santral";
+    color: #3B3C43;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.writingtypebtn {
+    --color: #B29142;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-family: "Santral";
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color);
+   }
+   
+   .writingtypebtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   .writingtypebtn:hover {
+    color: #FFFDFB;
+   }
+   
+   .writingtypebtn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .writingtypebtn:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .writingtypebtn:active:before {
+    background: #B29142;
+    transition: background 0s;
+   }
+
+/* Media Queries */
+/* @media (max-width: 1200px) {
+    .parts {
+        flex-direction: column;
+    }
+
+    #bow {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+} */
+
+@media (max-width: 768px) {
+    .parts {
+        flex-direction: column;
+    }
+
+    #bow {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .main {
+        font-size: xx-large;
+    }
+
+    .sub {
+        font-size: large;
+    }
+
+
+    #bow {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    #bow {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 80%;
+    }
+
+    .title {
+        padding: 10px;
+    }
+
+    .info {
+        padding: 5%;
+    }
+
+    .main {
+        font-size: large;
+    }
+
+    .sub {
+        font-size: medium;
+    }
+
+    .left1, .left2 {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
+}

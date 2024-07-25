@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "Goudy";
+  src: url(./Fonts/Goudy\ Titling\ W05\ SemiBold.woff2);
+}
+@font-face {
+  font-family: "Santral";
+  src: url(./Fonts/taner-ardali-santral-book-2.otf);
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+.parkerfooter {
+  background-color: #3B3C43;
+  padding: 1em;
+  color: black;
+  height: auto;
+  width: 100vw;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#brand {
+  width: 100em;
+}
+
+.divisions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.divisions div {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.foothead {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #B29142;
+  font-family: "Goudy";
+}
+
+.footsub {
+  margin: 2px 0;
+  color: #FFFDFB;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+#newsletter input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+#click .sign {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #B29142;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#short {
+  font-size: 0.8em;
+  color: #fff;
+  font-family: "Santral";
+  margin-top: 0.5em;
+}
+
+/* SOCIAL MEDIA ICONS */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Santral";
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #B29142;
+  color: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #728188;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #728188;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #728188;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 750px) {
+  .parkerfooter {
+    padding: 2em;
+  }
+
+  .line {
+    margin-bottom: 20px;
+  }
+  .divisions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divisions div {
+    min-width: 100%;
+  }
+
+  #newsletter input {
+    width: calc(100% - 90px);
+  }
+}
+
+@media (max-width: 480px) {
+  .foothead {
+    font-size: 1.2em;
+  }
+
+  .footsub {
+    font-size: 1em;
+  }
+
+  #newsletter input {
+    width: calc(100% - 80px);
+  }
+
+  #click .sign {
+    padding: 10px 15px;
+  }
+
+  #short {
+    font-size: 0.9em;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .wrapper .icon {
+    margin: 5px 0;
+  }
+}

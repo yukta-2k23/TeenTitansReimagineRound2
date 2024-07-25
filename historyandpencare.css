@@ -1,0 +1,404 @@
+@font-face {
+  font-family: "Goudy";
+  src: url(./Fonts/Goudy\ Titling\ W05\ SemiBold.woff2);
+}
+@font-face {
+  font-family: "Santral";
+  src: url(./Fonts/taner-ardali-santral-book-2.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* PENCARE */
+.pencaremain{
+    width:100vw;
+    background-color: #fffdfb;
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+    margin-bottom:2em;
+
+}
+.pencare-container {
+  padding: 0.5em 2em 0 2em;
+}
+
+.pencaretagcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pencaretagcontainer img{
+  width: 15em;
+}
+.pencare-sub-container img {
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+}
+.pencare-sub-container video {
+  width: 20vw;
+  height: 40vh;
+  object-fit: cover;
+}
+
+
+.pencare-sub-container video {
+  max-width: 100%;
+}
+
+.pencare-sub-container h3 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-family: "Goudy";
+  color: #b29142;
+  font-size: 2em;
+  padding: 1em 0 5px 0;
+  border-bottom: 2px solid #B29142;
+}
+
+#sub-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+#sub-container h2 {
+  font-family: "Santral";
+  font-weight: 800;
+  color:#3b3c43;
+  font-size: 1.8em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+#sub-container p {
+  font-size: 1em;
+  line-height: 20px;
+  font-family: "Santral";
+  width: 20vw;
+  letter-spacing: -1px;
+  padding-top: 1em;
+  color:#3b3c43;
+}
+
+/* HISTORY */
+.end{
+  height:100vh;
+  width:100vw;
+  background-image: url(https://newellbrands.imgix.net/14a5d33c-cfa1-3a66-8cc1-6de8b75dbc91/14a5d33c-cfa1-3a66-8cc1-6de8b75dbc91.jpg?fm=jpg&w=2880);
+  background-size: cover;
+  background-position: center;
+}
+.historycontainer {
+  height:auto;
+  width: 100%;
+}
+
+#scrollbar4::-webkit-scrollbar {
+  width: 12px;
+  background-color: #3b3c43;
+}
+
+#scrollbar4::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+#scrollbar4::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border: 2px solid #616161;
+  border-radius: 8px;
+}
+
+.col h4 {
+  width: 100%;
+  font-family: "Godit";
+  letter-spacing: 3px;
+  color: #b29142;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.historycontainer h1 {
+  font-family: "Godit";
+  letter-spacing: 3px;
+  color: #b29142;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero .historycontent {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.hero p {
+  font-family: "Santral";
+  font-style: italic;
+  letter-spacing: -2px;
+  color: #fffdfb;
+  font-size: 1.5em;
+}
+
+.hero h1 {
+  font-family: "Goudy";
+  letter-spacing: -2px;
+  font-size: 4em;
+  color: #B29142;
+}
+
+.services {
+  width: 100vw;
+  padding: 8em 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-header {
+  width: 100%;
+  display: flex;
+  gap: 4em;
+}
+.services-header .col h4{
+  font-family: "Goudy";
+  font-size:3em;
+}
+
+.services-header .col:nth-child(1) {
+  flex: 2;
+}
+
+.services-header .col:nth-child(2) {
+  flex: 5;
+}
+
+.service {
+  display: flex;
+  gap: 2em;
+  height: 150px;
+  border-top: 2px solid #B29142;
+}
+
+.service-info {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+.service-info p{
+  color:#3B3C43;
+  font-family: "Santral";
+  font-weight: 800;
+  font-size:1em;
+  letter-spacing: -1px;
+}
+.service-img {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.img {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+/* lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+  width:100%;
+}
+
+.lenis .lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis .lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: cover;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 599px) {
+
+  /* PENCARE */
+  .pencare-container {
+    padding: 0 1em 0 1em;
+  }
+
+  .pencare-container h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 1em 0 1em 0;
+  }
+
+  .pencare-sub-container img,
+  .pencare-sub-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .pencare-sub-container h3 {
+    font-size: 1.5em;
+    letter-spacing: 0;
+    padding: 1em 0 5px 0;
+  }
+
+  #sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 2em;
+    padding: 1em;
+  }
+
+  #sub-container h2 {
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+
+  #sub-container p {
+    font-size: 15px;
+    line-height: 18px;
+    width: 100%;
+    padding: 5px;
+    letter-spacing: 0.5px;
+  }
+
+  /* HISTORY */
+  .end{
+    height:40vh;
+  }
+  .col h4 {
+    padding-bottom: 1em;
+    font-size: 18px;
+  }
+
+  .historycontainer h1 {
+    font-size: 22px;
+    padding-bottom: 1em;
+  }
+
+  p {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .hero p {
+    letter-spacing: 1.5px;
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    letter-spacing: 2px;
+    font-size: 1.5em;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services-header {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .service-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5em;
+  }
+
+  .service-img {
+    padding: 0.1em;
+  }
+
+  html.lenis body {
+    height: 100%;
+  }
+}

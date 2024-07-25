@@ -1,0 +1,291 @@
+@font-face {
+    font-family: "Goudy";
+    src: url(./Fonts/Goudy\ Titling\ W05\ SemiBold.woff2);
+  }
+  @font-face {
+    font-family: "Santral";
+    src: url(./Fonts/taner-ardali-santral-book-2.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.giftmain {
+    height:150vh;
+    width: 100vw;
+    display: block;
+    background-color: #f3e5c3;
+    padding-top:2em;
+}
+.gifttagcontainer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#gift{
+    width:15em;
+}
+.giftpage1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec1 {
+    height: 65%;
+    width: 30%;
+    padding: 1em;
+}
+
+.sec1 h1 {
+    color: #b29142;
+    padding-left: 1em;
+    font-size: 2.5em;
+}
+
+#just {
+    padding-top: 2.5em;
+}
+
+#Parker {
+    padding-top: 1em;
+}
+
+.giftbox {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    height: 85%;
+    /* margin: 1em; */
+}
+
+#giftbox1 {
+    display: flex;
+    background-image: url(https://newellbrands.imgix.net/c778b8ec-1eea-3f05-a4b4-303b99bf179f/c778b8ec-1eea-3f05-a4b4-303b99bf179f.jpg?fm=jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#giftbox2 {
+    height: 72%;
+    background-image: url(https://newellbrands.imgix.net/81b99678-f8df-3d2b-8633-29fafebce41a/81b99678-f8df-3d2b-8633-29fafebce41a.jpg?fm=jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#giftbox3 img{
+    object-fit: cover;
+    height:100%;
+    object-position: center;
+    transition: ease 0.5s;
+}
+.btncontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.giftoverlay {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(transparent, #3b3c43 80%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.giftoverlay h3 {
+    font-weight: 900;
+    color: #fffdfb;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-family: "Santral";
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.giftbox:hover img {
+    transform: scale(1.1);
+}
+
+.giftbox:hover .giftoverlay {
+    height: 100%;
+}
+
+/* BUTTON */
+.btnwrapper {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cta:hover {
+    background-color: transparent;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-family: "Santral";
+    font-weight: 500;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    fill: #b29142;
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #3b3c43;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #b29142;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* GIFT MOBILE VERSION */
+.giftmainmobile {
+    background-color: #f3e5c3;
+    width: 100%;
+    padding-top:0.5em;
+    display:none;
+}
+
+.gifttagcontainer {
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+#giftmobile{
+    width:15em;
+}
+.giftpage1mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sec1mobile {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 40px 0;
+}
+.sec1mobile h1 {
+    color: #B29142;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family:"Goudy";
+}
+.btnwrapper {
+    text-align: center;
+    padding: 20px;
+    font-family: "Santral";
+}
+
+.cta {
+    background: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.cta .hover-underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.cta .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #B29142;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media(max-width:750px) {
+    .giftmain {
+        display: none;
+    }
+
+    .giftmainmobile {
+        display: block;
+    }
+}

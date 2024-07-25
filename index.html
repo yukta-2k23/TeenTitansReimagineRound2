@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker - Elegance writes Legacy | PARKER</title>
+    <!-- Link favicon -->
+    <link rel="icon" href="/images/parkerFavicon.png" type="image/png">
+    <!-- link remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- Link tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- link -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="writingtypes.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="collections.css">
+    <link rel="stylesheet" href="gift.css">
+    <link rel="stylesheet" href="historyandpencare.css">
+    <!-- Include GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <!-- Include ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="scrollbar overflow-y-hidden" id="scrollbar4" data-spy="scroll" data-target=".navbar" data-offset="0">
+    <!-- CURSOR -->
+    <div class="innercursor"></div>
+    <div class="outercursor"></div>
+    <!-- LOADER -->
+    <div class="loader">
+        <img class="parker-loader" src="https://logos-world.net/wp-content/uploads/2022/11/Parker-Emblem.png" alt="">
+    </div>
+    <!-- NAVBAR -->
+    <nav>
+        <div id="navbar" class="nav">
+            <div class="hideOnMobile nav-left">
+                <a href="#collectionsection">Collection</a>
+                <a href="#giftsection">Gift</a>
+                <a href="#writingtypessection">Writing Types</a>
+            </div>
+            <div class="hideOnMobile logo-container">     
+                <a href="#mainlandingpagesection"><h1 class="logo">PARKER</h1></a>
+            </div>
+            <div class="hideOnMobile nav-right">
+                <a href="#inkandrefillsection">Inks & Refills</a>
+                <a href="#historysection">History of Parker</a>
+                <a href="#pencaresection">Pen care</a>
+            </div>
+
+            <a class="hideOnDesktop" href="#mainlandingpagesection"><img class="logoMobile" src="./images/Parkerlogomobile.png" alt=""></a>
+            <a class="menuicon" onclick=showSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#b29142"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
+        </div>
+        <div class="sidebar nav">
+            <ul>
+                <li class="crossicon"><a  onclick=hideSidebar() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#b29142"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#collectionsection">Collection</a></li>
+                <li><a href="#giftmobilesection">Gift</a></li>
+                <li><a href="#writingtypessection">Writing Types</a></li>
+                <li><a href="#inkandrefillsection">Inks & Refills</a></li>
+                <li><a href="#historysection">History of Parker</a></li>
+                <li><a href="#pencaresection">Pen care</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- LANDING PAGE -->
+    <div id="mainlandingpagesection" class="landingpagesection">
+        <div class="mobilelandingpagetext">
+            <h1>for those who write <br>their own destiny</h1>
+            <h5>-Parker Pens</h5>
+            <h6>Make your mark</h6>
+        </div>
+        <button class="mainbtn explore"><a href="https://www.parkerpen.com/pen-gifts/">EXPLORE</a></button>
+    </div>
+
+    <!-- MILESTONES SECTION -->
+    <div class="milestonesMain">
+        <div class="patterncontainer">
+            <div class="milestone">
+                <div class="counters">
+                    <div class="counter">
+                        <h1><span data-count="130">0</span>+</h1>
+                        <h3>YEARS OF EXCELLENCE</h3>
+                    </div>
+                    <div class="counter">
+                        <h1><span data-count="100">0</span></h1>
+                        <h3>QUALITY CHECKS</h3>
+                    </div>
+                    <div class="counter">
+                        <h1><span data-count="20">0</span>+</h1>
+                        <h3>DISTINCT COLLECTIONS</h3>
+                    </div>
+                    <div class="counter">
+                        <h1><span data-count="100">0</span>%</h1>
+                        <h3>RECYCLABLE PACKAGING</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO SECTION-->
+    <div class="videosection">
+        <div class="videocontainer">
+            <video id="myVideo" autoplay loop muted playsinline src="https://newellbrands.imgix.net/9c0b46da-3450-3d85-861f-d9582aabc941/9c0b46da-3450-3d85-861f-d9582aabc941.mp4?auto=format,compress"></video>
+            <div class="videooverlay"><a href="#collectionsection"><button class="Btn">Discover</button></a></div>
+            <input type="checkbox" id="checkboxInput">
+            <label for="checkboxInput" class="toggleSwitch">
+                <div class="speaker">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+                        <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#B29142;stroke-width:4;stroke-linejoin:round;fill:none;"></path>
+                        <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#B29142;stroke-width:4;stroke-linecap:round"></path>
+                    </svg>
+                </div>
+                <div class="mute-speaker">
+                    <svg version="1.0" viewBox="0 0 75 75" stroke="#B29142" stroke-width="4">
+                        <path d="m39,14-17,15H6V48H22l17,15z" fill="#B29142" stroke-linejoin="round"></path>
+                        <path d="m49,26 20,24m0-24-20,24" fill="#B29142" stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </label>
+        </div>
+    </div>
+    <!-- COLLECTION -->
+    <div id="collectionsection" class="cover patterncontainer">
+        <div class="collectiontagcontainer">
+            <img src="collectionimg/Group 8 (1).png" alt="" id="tag">
+        </div>
+        <div class="page1">
+            <div class="mainbox">
+                <div class="box" id="box1">
+                    <div class="imgcon" id="img1">
+                        <img src="collectionimg/jotter.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>JOTTER</h2>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box" id="box2">
+                    <div class="imgcon" id="img2">
+                        <img src="collectionimg/sonnet.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>SONNET</h2>
+                        </div>
+                    </div>
+                    <div class="imgcon" id="img2-2">
+                        <img src="collectionimg/parker IM.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>PARKER IM</h2>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box" id="box3">
+                    <div class="imgcon" id="img3">
+                        <img src="collectionimg/urban1.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>URBAN</h2>
+                        </div>
+                    </div>
+                    <div class="imgcon" id="img3-2">
+                        <img src="collectionimg/duofold classic.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>DUOFOLD CLASSIC</h2>
+                        </div>
+                    </div>
+                    <div class="imgcon" id="img3-3">
+                        <img src="collectionimg/vector.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>VECTOR</h2>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box" id="box4">
+                    <div class="imgcon" id="img4">
+                        <img src="collectionimg/parker 51.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>PARKER 51</h2>
+                        </div>
+                    </div>
+                    <div class="imgcon" id="img4-2">
+                        <img src="collectionimg/ingenuity.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>INGENUITY</h2>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box" id="box5">
+                    <div class="imgcon" id="img5">
+                        <img src="collectionimg/jotter original.jpg" alt="" class="pics">
+                        <div class="content">
+                            <h2>JOTTER ORIGINAL</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GIFT -->
+    <div id="giftsection" class="giftmain">
+        <div class="gifttagcontainer">
+            <img id="gift" src="giftimg/Group 8.svg">
+        </div>
+        <div class="giftpage1">
+            <div class="sec1">
+                <h1 id="more">IT'S MORE</h1>
+                <div class="giftbox" id="giftbox1">
+                    <div class="giftoverlay">
+                        <h3>Parker Gift Sets</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1" >
+                <h1 id="just">THAN A GIFT,</h1>
+                <div class="giftbox" id="giftbox2">
+                    <div class="giftoverlay">
+                        <h3>Corporate Gifting</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1 btncontainer">
+                <h1 id="Parker">IT'S PARKER.</h1>
+                <div class="giftbox" id="giftbox3">
+                    <img src="giftimg/gift6.jpg" alt="">
+                    <div class="giftoverlay">
+                        <h3>Hand Picked</h3>
+                    </div>
+                </div>
+                <div class="btnwrapper">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> <a href="https://www.parkerpen.com/pen-gifts/">Shop now</a> </span>
+                        <svg
+                          id="arrow-horizontal"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="30"
+                          height="10"
+                          viewBox="0 0 46 16"
+                        >
+                          <path
+                            id="Path_10"
+                            data-name="Path 10"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                            transform="translate(30)"
+                          ></path>
+                        </svg>
+                    </button>
+                      
+                </div> 
+            </div>
+        </div>   
+        
+    </div>
+    <!-- GIFT MOBILE VERSION -->
+    <div id="giftmobilesection" class="giftmainmobile">
+        <div class="gifttagcontainer">
+            <img id="giftmobile" src="giftimg/Group 8.svg" alt="Gift Tag">
+        </div>
+        <div class="giftpage1mobile">
+            <div class="sec1mobile">
+                <h1>IT'S MORE</h1>
+                <div class="giftboxmobile" id="giftbox1mobile">
+                    <img src="giftimg/gift.jpg" alt="">
+                </div>
+            </div>
+            <div class="sec1mobile">
+                <h1 id="justmobile">THAN A GIFT,</h1>
+                <div class="giftboxmobile" id="giftbox2mobile">
+                    <img src="giftimg/gift3.jpg" alt="">
+                </div>
+            </div>
+            <div class="sec1mobile">
+                <h1 id="Parkermobile">IT'S PARKER.</h1>
+                <div class="giftboxmobile" id="giftbox3mobile">
+                    <img src="giftimg/gift2.jpg" alt="">
+                </div>
+                <div class="btnwrapper">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> <a href="https://www.parkerpen.com/pen-gifts/">Shop now </a></span>
+                        <svg id="arrow-horizontal" xmlns="http://www.w3.org/2000/svg" width="30" height="10" viewBox="0 0 46 16">
+                            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRITING TYPE -->
+    <div id="writingtypessection" class="writingtypewrapper patterncontainer">
+        <div class="top">
+            <div class="writingtypetagcontainer">
+                <img src="writingtypeimg/Group 2.png" alt="" id="bow" data-aos="fade-up">
+            </div>
+            <img src="writingtypeimg/FIND YOUR UNIQUE WRITING TYPE.png" alt="text" class="title" data-aos="fade-up">
+        </div>
+        <div class="left1">
+            <div class="parts" data-aos="fade-up">
+                <div class="imag">
+                    <img src="writingtypeimg/1.jpg" alt="" class="pics" width="800px" height="400px" data-aos="fade-up">
+                </div>
+                <div class="info" data-aos="fade-up">
+                    <h2 class="main" data-aos="fade-up"> <span>|</span> Fountain Pen</h2>
+                    <p class="sub" data-aos="fade-up">Elegant and flawless fine writing instruments with timeless appeal. </p>
+                    <a href="https://www.parkerpen.com/pen-gifts/"><button class="writingtypebtn" data-aos="fade-up">DISCOVER</button></a>
+                </div>   
+            </div>
+        </div>
+        <div class="right">
+            <div class="parts" data-aos="fade-up">
+                <div class="info" data-aos="fade-up">
+                    <h2 class="main" data-aos="fade-up"> <span>|</span> Rollerball Pen</h2>
+                    <p class="sub" data-aos="fade-up">Express yourself with a constant flow of ink for smooth writing.</p>
+                    <a href="https://www.parkerpen.com/pen-gifts/"><button class="writingtypebtn" data-aos="fade-up"> DISCOVER</button></a>
+                </div>   
+                <div class="imag">
+                    <img src="writingtypeimg/2.jpg" alt="" class="pics" width="800px" height="400px" data-aos="fade-up">
+                </div>
+            </div>
+            
+        </div>
+        <div class="left2">
+            <div class="parts" data-aos="fade-up">
+                <div class="imag">
+                    <img src="writingtypeimg/3.jpg" alt="" class="pics" width="800px" height="400px" data-aos="fade-up">
+                </div>
+                <div class="info" data-aos="fade-up">
+                    <h2 class="main" data-aos="fade-up"> <span>|</span> Ballpoint and Gel Pen</h2>
+                    <p class="sub" data-aos="fade-up">Practical, fun and expressive pens with reliable, long-lasting ink flow. </p>
+                    <a href="https://www.parkerpen.com/pen-gifts/"><button class="writingtypebtn" data-aos="fade-up"> DISCOVER</button></a>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+    <!-- INKS & REFILLS -->
+    <div id="inkandrefillsection" class="inkrefill">
+        <div class="inkrefilltagwrapper">
+            <img src="inks&refillimg/Group 3.png" >
+        </div>
+        <div class="inkrefillmain">
+            <div class="inkrefillcontainer">
+                <div class="inkrefillcard" style="--clr:#042449;">
+                    <div class="inkrefillimg inkbottle"></div>
+                    <div class="inkrefillcontent">
+                        <h3>Parker Ink Bottles</h3>
+                        <p>Choose from a vibrant selection of Parker ink bottles that provide superior performance and timeless appeal.</p>
+                    </div>
+                    <div class="imgbx">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/03/Parker-logo.png" alt="">
+                    </div>
+                    <div class="textbx">
+                        <h3>Parker Ink Bottles</h3>
+                    </div>
+                </div>
+                <div class="inkrefillcard" style="--clr:#042449;">
+                    <div class="inkrefillimg catridges"></div>
+                    <div class="inkrefillcontent">
+                        <h3>Ink Cartridges</h3>
+                        <p>Parker's high quality Quink® is available in a selection of vivid colours for instant ink flow.</p>
+                    </div>
+                    <div class="imgbx">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/03/Parker-logo.png" alt="">
+                       
+                    </div>
+                    <div class="textbx">
+                        <h3>Ink Cartridges</h3>
+                    </div>
+                </div>
+                <div class="inkrefillcard" style="--clr:#042449;">
+                    <div class="inkrefillimg penrefill"></div>
+                    <div class="inkrefillcontent">
+                        <h3>parker pen refills</h3>
+                        <p>Parker refills are formulated for superior performance and offer optimal writing with no blockages.</p>
+                    </div>
+                    <div class="imgbx">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/03/Parker-logo.png" alt="">
+
+                    </div>
+                    <div class="textbx">
+                        <h3>parker pen refills</h3>
+                    </div>
+                </div>
+                <a href="https://www.parkerpen.com/pen-gifts/"><button class="writingtypebtn hideOnDesktop"> EXPLORE</button></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- HISTORY -->
+    <div id="historysection" class="historycontainer">
+        <section class="hero">
+            <img src="https://newellbrands.imgix.net/b704ce4b-0b97-3c3e-b0f7-a94a009d0169/b704ce4b-0b97-3c3e-b0f7-a94a009d0169.jpg?fm=jpg&w=2880" alt="">
+            <div class="historycontent">
+                <p>"When only the best will do"</p>
+                <h1>HISTORY OF PARKER</h1>
+            </div>
+        </section>
+        <section class="services patterncontainer">
+            <div class="services-header">
+                <div class="col">
+                    <h4>HISTORY OF PARKER</h4>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>1888</h1>
+
+                    <p>Aged 25, George Safford Parker applies for his first pen patent and begins the Parker story with
+                        the driving philosophy: 'It will always be possible to make a better pen.'</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1888.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1894</h1>
+
+                    <p>Parker invents the pioneering anti-leak system, the 'Lucky Curve', Parker's second patent and
+                        major breakthrough.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1894.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1918</h1>
+
+                    <p>Parker's sales surpass the $1million USD mark for the first time.</p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1918.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1921</h1>
+
+                    <p>Parker launches Duofold, a large, bold, premium priced pen, which captures the spirit of the
+                        Roaring Twenties. Soon afterwards, Duofold becomes world famous with the 'Big Red' for its new
+                        bright orange color and 25-year guarantee.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1921.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1931</h1>
+
+                    <p>The Parker research department's first product arrives on the market. After three years and 1021
+                        experiments, a quick-drying ink 'Quink' (formula#1022) arrives. This is the first pen-cleaning
+                        ink that dries fast on paper and needs no blotter.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1931.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1939</h1>
+
+                    <p>To mark the company's 51st year, the Parker 51 is developed in 1939 and 1940 and launched in
+                        1941. Inspired by kenneth Parker's passion for aircraft aerodynamics, it appears 'Like a pen
+                        from another planet.' It won the Academy Award for Best Design and is one of the best pens of
+                        the 20th century.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1939.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1962</h1>
+
+                    <p>Parker is awarded the Royal Warrant by Queen Elizabeth II, becoming the official supplier of
+                        writing instruments to the Royal Household.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1962.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1964</h1>
+
+                    <p>The New York World's Fair opens. Parker's pavilion features an IBM computer which matches 'pen
+                        friends' from all over the world, thus becoming the original social network.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1964.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1972</h1>
+
+                    <p>To commemorate the American moon landing, a Special Edition Parker 75 was created. The pen
+                        contained a small amount of moon dust.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1972.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>1993</h1>
+
+                    <p>The first version of the Sonnet appears, continuing the use of the 'Cisele' pattern from the
+                        original Parker 75.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/1993.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>2013</h1>
+
+                    <p>Parker celebrates the act of writing by collecting, exhibiting and sharing written words from
+                        global and local opinion leaders that inspire, pass through time and travel across nations for
+                        future generations.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/2013.png" alt=""></div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-info">
+                    <h1>2015</h1>
+
+                    <p>Parker announces enhancements to the Duofold and Sonnet collections alongside an elevated new
+                        take on the Parker brand identity, encouraging people to slow down, organize their thoughts and
+                        embrace better thinking.</p>                </div>
+                <div class="service-img">
+                    <div class="img"><img src="/historypencareimg/2015.png" alt=""></div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="end"></section>
+    </div>
+
+    <!-- PENCARE -->
+    <div id="pencaresection" class="pencaremain">
+        <div class="pencare-container">
+            <div class="pencaretagcontainer">
+                <img src="historypencareimg/Group 5.png">
+            </div>
+            <div class="pencare-sub-container">
+                <h3>Fountain Pen Care Guide</h3>
+                <div class="fountain-pen" id="sub-container">
+                    <div class="clean">
+                        <h2>Clean</h2>
+                        <video loop muted playsinline  class="video" src="/historypencareimg/fountain-clean.mp4" id="myVideo5"></video>
+                        <p>Use this fountain pen cleaning method to keep your pen's nib in beautiful working order.</p>
+                    </div>
+                    <div class="refill">
+                        <h2>Refill</h2>
+                        <video loop muted playsinline  class="video" src="/historypencareimg/fountain-refill.mp4" id="myVideo6"></video>
+                        <p>Refill your fountain pen in seconds for continuous expression and fine writing.</p>
+                    </div>
+                    <div class="change" id="change">
+                        <h2>Change</h2>
+                        <video loop muted playsinline  class="video" src="/historypencareimg/fountain-change.mp4" id="myVideo1"></video>
+                        <p>A simple guide to effortlessly change a fountain pen cartridge in moments.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pencare-sub-container">
+                <h3>Parker Rollerball Pen Care Guide</h3>
+                <div class="fountain-pen" id="sub-container">
+                    <div class="change" id="change2">
+                        <h2>Change</h2>
+                        <video loop muted playsinline  class="video" src="/historypencareimg/rollerball-change.mp4" id="myVideo2"></video>
+                        <p>Change a Parker rollerball refill in seconds for smooth, consistent ink flow.</p>
+                        
+                    </div>
+                    <div class="clean">
+                        <h2>Store</h2>
+                        <img src="/historypencareimg/rollerball-store.jpg" alt="">
+                        <p>Store your pen with the cap covering the barrel to protect the refill from drying out when the
+                            pen is not in use.</p>
+                    </div>
+                    <div class="refill">
+                        <h2>Remove</h2>
+                        <img src="/historypencareimg/rollerball-remove.jpg" alt="">
+                        <p>Amodex is a highly effective ink stain remover for most inks and safe to use on all fabrics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pencare-sub-container">
+                <h3>Parker 5th Pen Care Guide</h3>
+                <div class="fountain-pen" id="sub-container">
+                    <div class="clean">
+                        <h2>Change</h2>
+    
+                        <video loop muted playsinline class="video" src="/historypencareimg/5th-change.mp4" id="myVideo3"></video>
+                        <p>Refill your Parker 5th pen in seconds for continued smooth writing.</p>
+
+    
+                    </div>
+                    <div class="refill">
+                        <h2>Store</h2>
+                        <img src="/historypencareimg/5th-store.jpg" alt="">
+                        <p>Store your Parker 5th pen with the cap covering the barrel to protect the refill from drying out
+                            when the pen is not in use.</p>
+                    </div>
+                    <div class="change" id="change3">
+                        <h2>Remove</h2>
+                        <img src="/historypencareimg/5th-remove.jpg" alt="">
+                        <p>Amodex is a highly effective ink stain remover for most inks and safe to use on all fabrics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pencare-sub-container">
+                <h3>Gel & Ballpoint Pen Care Guide</h3>
+                <div class="fountain-pen" id="sub-container">
+                    <div class="clean">
+                        <h2>Change</h2>
+                        <video loop muted playsinline class="video" src="/historypencareimg/gel-change.mp4" id="myVideo4"></video>
+                        <p>Refill your ballpoint pen or gel pen in seconds for continued smooth writing.</p>
+
+                    </div>
+                    <div class="refill">
+                        <h2>Store</h2>
+                        <img src="/historypencareimg/gel-store.jpg" alt="">
+                        <p>Store your pen with the refill always retracted into the barrel to avoid stains or leakage.</p>
+                    </div>
+                    <div class="change">
+                        <h2>Remove</h2>
+                        <img src="/historypencareimg/gel-remove.jpg" alt="">
+                        <p>Amodex is a highly effective ink stain remover for most inks and safe to use on all fabrics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- footer -->
+    <div class="parkerfooter">
+        <div class="foot">
+            <div class="line">
+                <img src="footerimg/footer.png" alt="logo" id="brand" data-aos="fade-up">  
+            </div>
+            <div class="divisions">
+                <div id="sec1">
+                    <h1 class="foothead" data-aos="fade-up">Parker Pens</h1>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Collections</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Pen Gifts</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Inks & Refills</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Writing Types</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">World of Parker</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Care</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Where to Buy</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Store Locator</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Sitemap</a></p>
+                </div>
+    
+                <div id="sec2">
+                    <h1 class="foothead" data-aos="fade-up">Support</h1>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Contact Us</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Warranty</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Nib Exchange Program</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Recycing Instructions</a></p>
+                </div>
+    
+                <div id="sec3">
+                    <h1 class="foothead" data-aos="fade-up">Legal</h1>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Privacy Statement</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Your Privacy Choices</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Cookie Policy</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Terms of Use</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">Accessibility</a></p>
+                    <p class="footsub" data-aos="fade-up"><a href="#">California Transparency Act</a></p>
+                </div>
+    
+                <div id="newsletter">
+                    <input placeholder="Enter Your Email" id="box" data-aos="fade-up">
+                    <span id="click"><button class="sign" data-aos="fade-up">Sign Up</button></span>
+                    <p id="short" data-aos="fade-up">By submitting, I confirm I have read and accept your Privacy Statement and I would like to receive marketing and/or promotional emails from Parker </p>
+                </div>
+            </div>
+            <!-- social media icons -->
+            <ul class="wrapper">
+                <li class="icon facebook">
+                  <span class="tooltip">Facebook</span>
+                  <svg
+                    viewBox="0 0 320 512"
+                    height="1.2em"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="icon twitter">
+                  <span class="tooltip">Twitter</span>
+                  <svg
+                    height="1.8em"
+                    fill="currentColor"
+                    viewBox="0 0 48 48"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="twitter"
+                  >
+                    <path
+                      d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                    ></path>
+                  </svg>
+                </li>
+                <li class="icon instagram">
+                  <span class="tooltip">Instagram</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1.2em"
+                    fill="currentColor"
+                    class="bi bi-instagram"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                    ></path>
+                  </svg>
+                </li>
+            </ul>              
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
